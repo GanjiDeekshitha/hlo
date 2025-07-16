@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Hover Dropdown</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      background-color:grey;
+      padding: 10px;
+    }
+
+    .navbar > .dropdown {
+      position: relative;
+      margin-right: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .navbar a:hover {
+      background-color: grey;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0px 4px 8px black;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color:white;
+    }
+
+    /* Show the dropdown when hovering */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="dropdown">
+      <a href="#">Courses ▼</a>
+      <div class="dropdown-content">
+        <a href="#">DSA to Development</a>
+        <a href="#">For Working Professionals</a>
+        <a href="#">For Students</a>
+        <a href="#">Full Stack Development</a>
+        <a href="#">All Courses</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Placement ▼</a>
+      <div class="dropdown-content">
+        <a href="#">Placement Prep with DSA</a>
+        <a href="#">Tech Interview 101</a>
+        <a href="#">DSA to Development</a>
+        <a href="#">DSA-Self Paced</a>
+        <a href="#">System Design</a>
+        <a href="#">Practice</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Data Science ▼</a>
+      <div class="dropdown-content">
+        <a href="#">Data Science & ML</a>
+        <a href="#">Data Science Training</a>
+        <a href="#">Data Analytics - Live</a>
+        <a href="#">Data Analytics Classroom</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">GATE ▼</a>
+      <div class="dropdown-content">
+        <a href="#">GATE Programs</a>
+        <a href="#">GATE Rank Booster</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
